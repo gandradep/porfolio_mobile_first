@@ -29,13 +29,21 @@ body {
   border: 3px solid red;
 } */
 
-nav.menu {
+.menu nav {
   display: flex;
   color: #28352f;
   font-size: 1.25rem;
   justify-content: space-between;
   padding: 3% 7%;
   align-items: baseline;
+}
+
+a.logo:link,
+a.logo:hover,
+a.logo:active,
+a.logo:visited {
+  text-decoration: none;
+  color: inherit;
 }
 
 #headline {
@@ -47,12 +55,12 @@ nav.menu {
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
-}
-
-header {
-  margin-top: 5%;
   font-size: 1.7rem;
   line-height: 3.3rem;
+}
+
+#headline hgroup {
+  margin-top: 2rem;
 }
 
 #headline p {
@@ -61,7 +69,8 @@ header {
   line-height: 2rem;
 }
 
-.socialMedia {
+ul.socialMedia {
+  list-style-type: none;
   display: flex;
   justify-content: center;
 }
@@ -75,7 +84,7 @@ header {
 }
 
 .actionButton a i {
-  border: 2px solid #acb7c3;
+  border: 1px solid #acb7c3;
   border-radius: 32px;
   padding: 3%;
 }
