@@ -1,3 +1,81 @@
-.banner {
-  color: blue;
+*,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.darkColor {
+  color: #172b4d;
+}
+
+.greenColor {
+  color: #36b37e;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* borders helped me visualize the different parts of the page */
+
+/*
+.wrapper > *{
+  border: 3px solid red;
+} */
+
+nav.menu {
+  display: flex;
+  color: #28352f;
+  font-size: 1.25rem;
+  justify-content: space-between;
+  padding: 3% 7%;
+  align-items: baseline;
+}
+
+#headline {
+  display: flex;
+  background-image: url("assets\\images\\header-illsutration-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+
+header {
+  margin-top: 5%;
+  font-size: 1.7rem;
+  line-height: 3.3rem;
+}
+
+#headline p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.socialMedia {
+  display: flex;
+  justify-content: center;
+}
+
+.socialMedia > * {
+  padding: 0 3%;
+}
+
+#headline > * {
+  padding: 0 8%;
+}
+
+.actionButton a i {
+  border: 2px solid #acb7c3;
+  border-radius: 32px;
+  padding: 3%;
 }
