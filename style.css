@@ -55,7 +55,7 @@ a {
 .menu nav {
   display: flex;
   color: #28352f;
-  font-size: 1.2rem;
+  font-size: 20px;
   font-weight: 600;
   justify-content: space-between;
   padding: 3% 7%;
@@ -83,6 +83,7 @@ a.logo:visited {
   text-align: center;
   font-size: 2.5rem;
   line-height: 3.3rem;
+  font-weight: 700;
 }
 
 #headline hgroup {
@@ -91,8 +92,8 @@ a.logo:visited {
 
 p {
   text-align: center;
-  font-size: 1.15rem;
-  line-height: 1.75rem;
+  font-size: 20px;
+  line-height: 28px;
   max-width: 100%;
   color: #42526e;
 }
@@ -126,12 +127,12 @@ hr {
 
 .gridContainer {
   display: grid;
-  grid-template: repeat(4, 60vh) / 1fr;
-  grid-row-gap: 2%;
-  margin-top: 13%;
+  grid-template: repeat(5, 1fr) / 1fr;
 }
 
 .workPost {
+  height: 60vh;
+  margin-top: 24px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -149,8 +150,9 @@ hr {
 }
 
 .cardTitle {
-  font-weight: 500;
-  line-height: 1.8rem;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
   text-align: center;
 }
 
@@ -171,10 +173,10 @@ hr {
 a.button {
   background-color: #36b37e;
   color: white;
-  padding: 4%;
-  font-size: 1.1rem;
+  padding: 12px;
+  font-size: 17px;
   font-weight: 500;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 a.button:hover {
@@ -190,7 +192,7 @@ a.button:active {
 
 /* About me part */
 .aboutMe {
-  margin-top: 45%;
+  margin-top: 10%;
 }
 
 .aboutMe header {
@@ -202,16 +204,21 @@ a.button:active {
   background-image: url(assets\\images\\illustration1AboutMeMobile.svg), url(assets\\images\\illustration2AboutMeMobile.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: right top, left bottom;
+
 }
 
 div.skillsGrid {
   margin-top: 7.5vh;
+  margin-bottom: 7.5vh;
+
   display: grid;
-  grid-template: repeat(3, 50vh)/1fr;
-  grid-row-gap: 3%;
+  grid-template: 1fr 1fr 1fr/1fr;
+
 }
 
 .skills {
+  height: 50vh;
+  margin-top: 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -239,9 +246,10 @@ div.skillsGrid {
 
 .skills ul li {
   background-color: white;
-  padding: 4%;
-  margin: 2%;
-  font-size: 0.75rem;
-  font-weight: 500;
+  padding: 12px;
+  margin: 4px;
+  line-height: 16px;
+  font-size: 12px;
+  font-weight: 600;
   border-radius: 5px;
 }
