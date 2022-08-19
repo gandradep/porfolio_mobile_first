@@ -204,16 +204,13 @@ a.button:active {
   background-image: url(assets\\images\\illustration1AboutMeMobile.svg), url(assets\\images\\illustration2AboutMeMobile.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: right top, left bottom;
-
 }
 
 div.skillsGrid {
   margin-top: 7.5vh;
   margin-bottom: 7.5vh;
-
   display: grid;
   grid-template: 1fr 1fr 1fr/1fr;
-
 }
 
 .skills {
