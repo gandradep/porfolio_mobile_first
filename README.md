@@ -1,6 +1,6 @@
 # Setup Portfolio MobileFirst
 
-> The portfolio project's first part consists of building the heading and the headline. In this first instance, we will focus on the mobile-first approach.
+> The portfolio project's second part consists of adding the 'Works' and 'About Me' sections. The focus will be on the mobile-first approach.
 
 ## Built With
 
