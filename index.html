@@ -199,28 +199,29 @@
 
       </section>
 
-      <section id="form">  
-        <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+      <section id="form">
+        <h2 class="title darkColor padMobile">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
         </h2>
-        <form action="https://formspree.io/f/mqkjaepa" method="post">
+        <form class="padMobile" action="https://formspree.io/f/mqkjaepa" method="post">
             <ul>
-                <li>
-                    <input type="text" name="Full name" placeholder="Full name" required maxlength="30">
+                <li class="w100">
+                    <input class="w100 formText paddInput" type="text" name="Full name" placeholder="Full name" required maxlength="30">
+                </li>
+                <li class="w100">
+                    <input class="w100 formText paddInput" type="email" name="email_address" placeholder="Email address" required>
+                </li>
+                <li class="w100">
+                    <textarea class="w100 formText textAreaStyle" name="comments" placeholder="Enter text here" required maxlength="500"></textarea>
                 </li>
                 <li>
-                    <input type="email" name="email_address" placeholder="Email address" required>
-                </li>
-                <li>
-                    <textarea name="comments" placeholder="Enter text here" required maxlength="500"></textarea>
-                </li>
-                <li>
-                    <button type="submit">Get in touch</button>
+                    <button class="button" type="submit">Get in touch</button>
                 </li>
             </ul>
         </form>
       </section>
 
       <footer>
+        <img id="imageFooter" src="assets/images/illustration-contact-form.svg" alt="decorative image">
         <ul class="socialMedia padMobile">
           <li>
             <a href="https://twitter.com/leribagandrade" rel="noopener" target="_blank"><img src="assets/images/twitter.svg" alt="twitter icon"></a>
@@ -238,9 +239,9 @@
             <a href="#" rel="noopener" target="_blank"><img src="assets/images/angellist.svg" alt="angelist icon"></a>
           </li>
         </ul>
-        <p>myemailhere@email.com
+        <p>eventsonido@gmail.com
         </p>
-        <hr>
+        <hr class="finalHR">
       </footer>
 
   </body>

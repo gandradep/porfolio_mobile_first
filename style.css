@@ -32,12 +32,17 @@ a {
   color: #36b37e;
 }
 
+.w100 {
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .postColor {
   color: #3a4a42;
 }
 
 .padMobile {
-  padding: 0 6%;
+  padding: 0 7%;
 }
 
 .borderRad12 {
@@ -81,7 +86,7 @@ a.logo:visited {
 
 .title {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 40px;
   line-height: 3.3rem;
   font-weight: 700;
 }
@@ -101,6 +106,7 @@ p {
 ul.socialMedia {
   display: flex;
   justify-content: center;
+  margin-bottom: 17px;
 }
 
 .socialMedia > * {
@@ -170,22 +176,23 @@ hr {
   font-weight: 500;
 }
 
-a.button {
+.button {
   background-color: #36b37e;
   color: white;
   padding: 12px;
   font-size: 17px;
   font-weight: 500;
   border-radius: 4px;
+  border: none;
 }
 
-a.button:hover {
+.button:hover {
   background-color: #36b37e;
   color: white;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
-a.button:active {
+.button:active {
   background-color: #008552;
   color: white;
 }
@@ -249,4 +256,58 @@ div.skillsGrid {
   font-size: 12px;
   font-weight: 600;
   border-radius: 5px;
+}
+
+
+form ul {
+  margin-top: 58px;
+  margin-bottom: 46px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form ul > li {
+  padding: 12px 0;
+}
+
+.formText {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  border: 1px solid #D0D9D4;
+  border-radius: 4px;
+}
+
+.formText:focus {
+    outline: none;
+    border-color: #60C095;
+}
+
+.paddInput {
+  padding: 15px 16px;
+}
+
+textarea {
+  height: 114px;
+  padding: 12px;
+  resize: none;
+}
+
+hr.finalHR {
+  background-color: #172b4d;
+  width: 40%;
+  margin-top: 100px;
+}
+
+footer {
+  position: relative;
+}
+
+#imageFooter {
+  position: absolute;
+  right: 0;
+  width: 70px;
+  top: -140px;
 }
