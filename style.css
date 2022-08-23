@@ -162,10 +162,22 @@ hr {
   text-align: center;
 }
 
+form ul {
+  margin-top: 58px;
+  margin-bottom: 46px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .workInfo ul {
   width: 100%;
   display: flex;
   justify-content: space-around;
+}
+
+form ul > li {
+  padding: 12px 0;
 }
 
 .workInfo li {
@@ -258,31 +270,18 @@ div.skillsGrid {
   border-radius: 5px;
 }
 
-
-form ul {
-  margin-top: 58px;
-  margin-bottom: 46px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-form ul > li {
-  padding: 12px 0;
-}
-
 .formText {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  border: 1px solid #D0D9D4;
+  border: 1px solid #d0d9d4;
   border-radius: 4px;
 }
 
 .formText:focus {
-    outline: none;
-    border-color: #60C095;
+  outline: none;
+  border-color: #60c095;
 }
 
 .paddInput {
