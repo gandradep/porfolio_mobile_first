@@ -1,6 +1,6 @@
 # Setup Portfolio MobileFirst
 
-> The portfolio project's second part consists of adding the 'Works' and 'About Me' sections. The focus will be on the mobile-first approach.
+> The portfolio project's third part consists of adding form and footer sections. The focus will be on the mobile-first approach.
 
 ## Built With
 
