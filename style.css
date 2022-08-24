@@ -15,6 +15,11 @@ body {
   height: auto;
 }
 
+nav {
+  font-size: 20px;
+  font-weight: 600;
+}
+
 ul {
   list-style: none;
 }
@@ -24,12 +29,20 @@ a {
 }
 
 /* general classes for use */
+.navBarColor {
+  color: #28352f;
+}
+
 .darkColor {
   color: #172b4d;
 }
 
 .greenColor {
   color: #36b37e;
+}
+
+.displayDesktop {
+  display: none;
 }
 
 .w100 {
@@ -57,21 +70,18 @@ a {
 }
 
 /* borders helped me visualize the different parts of the page */
-.menu nav {
+nav.displayMobile {
   display: flex;
-  color: #28352f;
-  font-size: 20px;
-  font-weight: 600;
   justify-content: space-between;
   padding: 3% 7%;
   align-items: baseline;
 }
 
-a.logo:link,
-a.logo:hover,
-a.logo:active,
-a.logo:visited {
-  color: inherit;
+nav a:link,
+nav a:hover,
+nav a:active,
+nav a:visited {
+  color: #28352f;
 }
 
 #headline {
@@ -210,11 +220,11 @@ form ul > li {
 }
 
 /* About me part */
-.aboutMe {
+#aboutMe {
   margin-top: 10%;
 }
 
-.aboutMe header {
+#aboutMe header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -300,13 +310,83 @@ hr.finalHR {
   margin-top: 100px;
 }
 
-footer {
+section {
   position: relative;
 }
 
-#imageFooter {
+#imageFormMobile {
   position: absolute;
   right: 0;
   width: 70px;
-  top: -140px;
+  bottom:-75px;
+}
+
+@media only screen and (min-width: 768px) {
+
+  .wrapper {
+    background-image: url("assets/images/Header-llustration-desktop@2x.jpg");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+
+  }
+
+  #headline {
+    background-image: none;
+    flex: 0 1 500px;
+    margin-top: 120px;
+    justify-content: space-around;
+  }
+
+  nav {
+    font-size: 15px;
+  }
+
+  nav.displayMobile {
+    display: none;
+  }
+
+  #headline hgroup {
+  margin-top: 0;
+}
+
+  .displayDesktop {
+    display: block;
+  }
+
+  .displayDesktop ul {
+    display: flex;
+    justify-content: center;
+    padding: 26px;
+  }
+
+  .displayDesktop ul > li {
+    padding: 0 10px;
+  }
+
+  .title {
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: 0.37px;
+    line-height: 60px;
+  }
+
+  .padMobile {
+    padding: 0 18%;
+  }
+
+  p {
+    font-size: 22px;
+    line-height: 36px;
+  }
+
+  ul.socialMedia {
+    margin-bottom: 0;
+  }
+
+  .actionButton {
+    padding: 17px;
+  }
+
+
+
 }
