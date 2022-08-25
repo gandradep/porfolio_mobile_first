@@ -1,12 +1,11 @@
 # Setup Portfolio MobileFirst
 
-> The portfolio project's third part consists of adding form and footer sections. The focus will be on the mobile-first approach.
+> The portfolio project's fourth part consists on using responsive web design so the page fits nicely in a desktop screen.
 
 ## Built With
 
 - Html, css.
 - Linters.
-
 
 ## Authors
 
