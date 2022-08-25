@@ -55,7 +55,8 @@ a {
 }
 
 .padMobile,
-.padWork {
+.padWork,
+.padForm {
   padding: 0 7%;
 }
 
@@ -71,7 +72,7 @@ a {
 }
 
 /* borders helped me visualize the different parts of the page */
-nav.displayMobile {
+.displayMobile {
   display: flex;
   justify-content: space-between;
   padding: 3% 7%;
@@ -95,7 +96,8 @@ nav a:visited {
   justify-content: space-around;
 }
 
-.title {
+.title,
+.titleForm {
   text-align: center;
   font-size: 40px;
   line-height: 3.3rem;
@@ -315,20 +317,22 @@ section {
   position: relative;
 }
 
-#imageFormMobile {
+.imageFormMobile {
   position: absolute;
   right: 0;
   width: 70px;
-  bottom:-75px;
+  bottom: -75px;
+}
+
+.imageFormDesktop {
+  display: none;
 }
 
 @media only screen and (min-width: 768px) {
-
   .wrapper {
     background-image: url("assets/images/Header-llustration-desktop@2x.jpg");
     background-repeat: no-repeat;
-    background-size:100% 100%;
-
+    background-size: 100% 100%;
   }
 
   #headline {
@@ -342,22 +346,31 @@ section {
     font-size: 15px;
   }
 
-  nav.displayMobile {
+  .displayMobile {
     display: none;
   }
 
   #headline hgroup {
-  margin-top: 0;
-}
+    margin-top: 0;
+  }
 
   .displayDesktop {
     display: block;
+  }
+
+  form ul {
+    align-items: flex-start;
+    margin: 0;
   }
 
   .displayDesktop ul {
     display: flex;
     justify-content: center;
     padding: 26px;
+  }
+
+  .workInfo li {
+    margin: 0 2px;
   }
 
   .displayDesktop ul > li {
@@ -392,11 +405,12 @@ section {
     grid-template: repeat(2, 1fr) / repeat(3, 1fr);
     grid-gap: 32px 24px;
     justify-content: center;
-    max-width: 1155px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 
-  .padWork {
+  .padWork,
+  .padForm {
     padding: 0;
   }
 
@@ -422,10 +436,6 @@ section {
     justify-content: center;
   }
 
-  .workInfo li {
-    margin: 0 2px;
-  }
-
   #aboutMe {
     margin-top: 89px;
   }
@@ -445,7 +455,7 @@ section {
     grid-template: 1fr / repeat(3, 1fr);
     grid-column-gap: 24px;
     justify-content: center;
-    max-width: 1155px;
+    max-width: 1200px;
     margin: 52px auto;
   }
 
@@ -454,6 +464,70 @@ section {
     margin-top: 0;
   }
 
+  #form {
+    box-sizing: content-box;
+    display: flex;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 112px;
+    padding-bottom: 225px;
+  }
 
+  h2.titleForm {
+    width: 40%;
+    font-size: 30px;
+    line-height: 52px;
+    text-align: justify;
+  }
 
+  form {
+    width: 55%;
+  }
+
+  .imageFormMobile {
+    display: none;
+  }
+
+  .imageFormDesktop {
+    display: inline;
+    position: absolute;
+    z-index: -1;
+  }
+
+  #wrapperForm {
+    position: relative;
+  }
+
+  #imgForm1 {
+    left: 0%;
+    bottom: 0%;
+  }
+
+  #imgForm2 {
+    left: 19%;
+    bottom: 15%;
+  }
+
+  #imgForm3 {
+    right: 0%;
+    bottom: 0%;
+  }
+
+  hr.desktopHr {
+    width: 100%;
+    background-color: #dfe1e6;
+    height: 1px;
+    margin: 0 0 25px 0;
+  }
+
+  .socialMedia > * {
+    padding: 0 11px;
+  }
+
+  footer {
+    margin-bottom: 26px;
+  }
 }
