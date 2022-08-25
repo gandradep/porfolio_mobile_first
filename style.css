@@ -54,7 +54,8 @@ a {
   color: #3a4a42;
 }
 
-.padMobile {
+.padMobile,
+.padWork {
   padding: 0 7%;
 }
 
@@ -390,6 +391,13 @@ section {
   .gridContainer {
     grid-template: repeat(2, 1fr) / repeat(3, 1fr);
     grid-gap: 32px 24px;
+    justify-content: center;
+    max-width: 1155px;
+    margin: 0 auto;
+  }
+
+  .padWork {
+    padding: 0;
   }
 
   .mobileHr {
@@ -418,8 +426,34 @@ section {
     margin: 0 2px;
   }
 
-  #aboutMe header {
-    background-image: none;
+  #aboutMe {
+    margin-top: 89px;
   }
+
+  #aboutMe header {
+    background-image: url(assets/images/illustration1AboutMeDesktop.svg), url(assets/images/illustration2AboutMeDesktop.svg);
+    justify-content: flex-end;
+    height: 40vh;
+  }
+
+  #aboutMe header h1,
+  #aboutMe header p {
+    margin-bottom: 24px;
+  }
+
+  div.skillsGrid {
+    grid-template: 1fr / repeat(3, 1fr);
+    grid-column-gap: 24px;
+    justify-content: center;
+    max-width: 1155px;
+    margin: 52px auto;
+  }
+
+  .skills {
+    height: 40vh;
+    margin-top: 0;
+  }
+
+
 
 }
