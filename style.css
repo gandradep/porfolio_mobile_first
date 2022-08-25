@@ -143,7 +143,7 @@ hr {
 
 .gridContainer {
   display: grid;
-  grid-template: repeat(5, 1fr) / 1fr;
+  grid-template: repeat(6, 1fr) / 1fr;
 }
 
 .workPost {
@@ -387,6 +387,39 @@ section {
     padding: 17px;
   }
 
+  .gridContainer {
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    grid-gap: 32px 24px;
+  }
 
+  .mobileHr {
+    display: none;
+  }
+
+  #works header {
+    margin-top: 102px;
+    margin-bottom: 52px;
+  }
+
+  .padWorkDesktop {
+    padding: 0 10%;
+  }
+
+  .workPost {
+    height: 45vh;
+    margin-top: 0;
+  }
+
+  .workInfo ul {
+    justify-content: center;
+  }
+
+  .workInfo li {
+    margin: 0 2px;
+  }
+
+  #aboutMe header {
+    background-image: none;
+  }
 
 }
