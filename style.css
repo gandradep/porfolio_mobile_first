@@ -89,10 +89,22 @@ nav a:visited {
 
 /* transititons for group */
 #title_animation {
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-name: fontbold;
-  animation-iteration-count: 3s;
+  animation-iteration-count: 3;
   animation-direction: alternate;
+}
+
+@keyframes fontbold {
+  from {
+    font-weight: 100;
+    letter-spacing: 4px;
+  }
+
+  to {
+    font-weight: 700;
+    letter-spacing: 0.37px;
+  }
 }
 
 #headline {
