@@ -87,6 +87,14 @@ nav a:visited {
   color: #28352f;
 }
 
+/* transititons for group */
+#title_animation {
+  animation-duration: 3s;
+  animation-name: fontbold;
+  animation-iteration-count: 3s;
+  animation-direction: alternate;
+}
+
 #headline {
   display: flex;
   background-image: url("assets\\images\\header-illsutration-mobile.jpg");
