@@ -1,6 +1,7 @@
 # Setup Portfolio MobileFirst
 
-> The portfolio project's fourth part consists on using responsive web design so the page fits nicely in a desktop screen.
+> The portfolio project's fifth part consists on deploying the application using GitHub Pages, this will make the app available online.
+[Link to website](https://gandradep.github.io/setupPortfolioMobileFirst/)
 
 ## Built With
 
