@@ -233,13 +233,16 @@
           <form  action="https://formspree.io/f/mqkjaepa" method="post">
               <ul>
                   <li class="w100">
-                      <input class="w100 formText paddInput" type="text" name="Full name" placeholder="Full name" required maxlength="30">
+                    <label for="fullName" hidden>Full name</label>  
+                    <input id="fullName" class="w100 formText paddInput" type="text" name="fullName" placeholder="Full name" required maxlength="30">
                   </li>
                   <li class="w100">
-                      <input class="w100 formText paddInput" type="email" name="email_address" placeholder="Email address" required>
+                    <label for="emailAddress" hidden>Email address</label>
+                      <input id="emailAddress" class="w100 formText paddInput" type="email" name="emailAddress" placeholder="Email address" required>
                   </li>
                   <li class="w100">
-                      <textarea class="w100 formText textAreaStyle" name="comments" placeholder="Enter text here" required maxlength="500"></textarea>
+                    <label for="comments" hidden>Additional comments</label>
+                      <textarea id="comments" class="w100 formText textAreaStyle" name="comments" placeholder="Enter text here" required maxlength="500"></textarea>
                   </li>
                   <li>
                       <button class="button" type="submit">Get in touch</button>
