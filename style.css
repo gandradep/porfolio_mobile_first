@@ -41,6 +41,10 @@ a {
   color: #36b37e;
 }
 
+.blueColor {
+  color: #1e488f;
+}
+
 .displayDesktop,
 .desktopHr {
   display: none;
@@ -171,7 +175,7 @@ hr {
 }
 
 .workPost {
-  height: 60vh;
+  min-height: 60vh;
   margin-top: 24px;
   display: flex;
   flex-direction: column;
@@ -182,7 +186,7 @@ hr {
 
 .workInfo {
   background-color: white;
-  height: 48%;
+  min-height: 48%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -208,6 +212,7 @@ form ul {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 form ul > li {
@@ -223,7 +228,7 @@ form ul > li {
 }
 
 .button {
-  background-color: #36b37e;
+  background-color: #1e488f;
   color: white;
   padding: 12px;
   font-size: 17px;
@@ -233,13 +238,13 @@ form ul > li {
 }
 
 .button:hover {
-  background-color: #36b37e;
+  background-color: #1e488f ;
   color: white;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 .button:active {
-  background-color: #008552;
+  background-color: #172b4d;
   color: white;
 }
 
@@ -253,7 +258,7 @@ form ul > li {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 50vh;
+  min-height: 50vh;
   background-image: url(assets\\images\\illustration1AboutMeMobile.svg), url(assets\\images\\illustration2AboutMeMobile.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: right top, left bottom;
@@ -267,7 +272,7 @@ div.skillsGrid {
 }
 
 .skills {
-  height: 50vh;
+  min-height: 50vh;
   margin-top: 24px;
   display: flex;
   flex-direction: column;
@@ -450,7 +455,7 @@ section {
   }
 
   .workPost {
-    height: 45vh;
+    min-height: 45vh;
     margin-top: 0;
   }
 
@@ -465,7 +470,7 @@ section {
   #aboutMe header {
     background-image: url(assets/images/illustration1AboutMeDesktop.svg), url(assets/images/illustration2AboutMeDesktop.svg);
     justify-content: flex-end;
-    height: 40vh;
+    min-height: 40vh;
   }
 
   #aboutMe header h1,
@@ -482,7 +487,7 @@ section {
   }
 
   .skills {
-    height: 40vh;
+    min-height: 40vh;
     margin-top: 0;
   }
 
@@ -498,7 +503,7 @@ section {
     padding-bottom: 225px;
   }
 
-  h2.titleForm {
+  p.titleForm {
     width: 40%;
     font-size: 30px;
     line-height: 52px;
