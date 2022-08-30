@@ -1,6 +1,6 @@
 # Setup Portfolio MobileFirst
 
-> The portfolio project's fifth part consists on deploying the application using GitHub Pages, this will make the app available online.
+> The portfolio project's sixth part consists of including accessibility. This was a pair programming project.
 [Link to website](https://gandradep.github.io/setupPortfolioMobileFirst/)
 
 ## Built With
