@@ -84,6 +84,31 @@ a {
   align-items: baseline;
 }
 
+.showMenu{
+  box-sizing: border-box;
+  display:block;
+  position: fixed;
+  min-height: 100vh;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  color: #3a4a42;
+  padding-left: 5%;
+}
+.closeMenuSymbol {
+  margin-left: 90%;
+  margin-top: 5%;
+  color: #67798e;
+}
+.showMenu ul li{
+  margin:20px 0;
+}
+
 nav a:link,
 nav a:hover,
 nav a:active,

@@ -16,10 +16,11 @@
         <nav class="displayMobileNav">
           <a href="index.html" class="navBarColor logo">Welcome</a>
           <div class="hamburgerMenu">
-            <i class="fa-solid fa-bars"></i>
+            <i id="hamburgerSymbol" class="fa-solid fa-bars"></i>
           </div>
         </nav>
-        <nav class="displayDesktop">
+        <nav id="popUpMenuMobile" class="displayDesktop">
+          <i class="closeMenuSymbol fa-duotone fa-x"></i>
           <ul>
             <li>
               <a class="navBarColor" href="#works">Portfolio</a>
@@ -233,7 +234,7 @@
           <form  action="https://formspree.io/f/mqkjaepa" method="post">
               <ul>
                   <li class="w100">
-                    <label for="fullName" hidden>Full name</label>  
+                    <label for="fullName" hidden>Full name</label>
                     <input id="fullName" class="w100 formText paddInput" type="text" name="fullName" placeholder="Full name" required maxlength="30">
                   </li>
                   <li class="w100">
@@ -282,7 +283,7 @@
         </p>
         <hr class="mobileHr finalHR">
       </footer>
-
+      <script src="menu.js" charset="utf-8"></script>
   </body>
 
 </html>
