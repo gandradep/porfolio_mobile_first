@@ -17,3 +17,9 @@ closeMenuSymbol.addEventListener('click', closeMenu);
 menuListItems.forEach((element) => {
   element.addEventListener('click', closeMenu);
 });
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 768) {
+    closeMenu();
+  }
+});
