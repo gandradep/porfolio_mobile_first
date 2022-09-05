@@ -1,6 +1,6 @@
 # Setup Portfolio MobileFirst
 
-> The portfolio project's sixth part consists of including accessibility. This was a pair programming project.
+> The portfolio project's seventh part consists of making the mobile menu functional using javaScript.
 [Link to website](https://gandradep.github.io/setupPortfolioMobileFirst/)
 
 ## Built With
