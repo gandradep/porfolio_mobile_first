@@ -1,24 +1,19 @@
-let hamburgerSymbol = document.getElementById('hamburgerSymbol');
-let popUpMenuMobile = document.getElementById('popUpMenuMobile');
-let closeMenuSymbol = document.getElementById('closeMenuSymbol');
-let menuListItems = Array.from(document.querySelectorAll('ul .navBarColor'));
+const hamburgerSymbol = document.getElementById('hamburgerSymbol');
+const popUpMenuMobile = document.getElementById('popUpMenuMobile');
+const closeMenuSymbol = document.getElementById('closeMenuSymbol');
+const menuListItems = Array.from(document.querySelectorAll('ul .navBarColor'));
 
-console.log(menuListItems);
-
-function openMenu(){
+function openMenu() {
   popUpMenuMobile.classList.add('showMenu');
 }
 
-function closeMenu(){
+function closeMenu() {
   popUpMenuMobile.classList.remove('showMenu');
 }
-
 
 hamburgerSymbol.addEventListener('click', openMenu);
 closeMenuSymbol.addEventListener('click', closeMenu);
 
-
-menuListItems.forEach(element => {
+menuListItems.forEach((element) => {
   element.addEventListener('click', closeMenu);
-  
 });

@@ -84,13 +84,14 @@ a {
   align-items: baseline;
 }
 
-.showMenu{
+/* classes for mobile menu */
+.showMenu {
   box-sizing: border-box;
-  display:block;
+  display: block;
   position: fixed;
   min-height: 100vh;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 100%;
   background-color: white;
   z-index: 1;
@@ -100,13 +101,27 @@ a {
   color: #3a4a42;
   padding-left: 5%;
 }
+
 .closeMenuSymbol {
   margin-left: 90%;
   margin-top: 5%;
   color: #67798e;
 }
-.showMenu ul li{
-  margin:20px 0;
+
+form ul > li {
+  padding: 12px 0;
+}
+
+.workInfo li {
+  background-color: #ebf0ee;
+  border-radius: 5px;
+  padding: 2% 3%;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.showMenu ul li {
+  margin: 20px 0;
 }
 
 nav a:link,
@@ -238,18 +253,6 @@ form ul {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-}
-
-form ul > li {
-  padding: 12px 0;
-}
-
-.workInfo li {
-  background-color: #ebf0ee;
-  border-radius: 5px;
-  padding: 2% 3%;
-  font-size: 0.75rem;
-  font-weight: 500;
 }
 
 .button {
