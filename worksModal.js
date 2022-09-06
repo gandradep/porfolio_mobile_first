@@ -48,3 +48,24 @@ for (let i = 0; i < worksInfo.title.length; i += 1) {
   article.appendChild(divCard);
   worksGrid.appendChild(article);
 }
+
+const modal = document.getElementById('modal');
+const buttons = Array.from(document.querySelectorAll('.workPost .button'));
+const modalTitle = document.createElement('h2');
+
+
+buttons.forEach((button) => {
+  button.addEventListener('click', () => {
+    let index = buttons.indexOf(button);
+    modal.classList.remove('displayNone');
+    modal.classList.add('modalDisplay');
+    modalTitle.innerText = worksInfo.title[index];
+    modal.appendChild(modalTitle);
+  });
+});
+
+modal.addEventListener('click', () => {
+  modal.classList.remove('modalDisplay');
+  modal.classList.add('displayNone');
+  modal.innerText='';
+});

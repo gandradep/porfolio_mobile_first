@@ -102,6 +102,21 @@ a {
   padding-left: 5%;
 }
 
+.displayNone {
+  display: none;
+}
+
+.modalDisplay {
+  display: block;
+  position: fixed;
+  background-color: gray;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+}
+
 .closeMenuSymbol {
   margin-left: 90%;
   margin-top: 5%;
