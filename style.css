@@ -251,9 +251,15 @@ form ul {
 .workInfo ul {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
 }
+
+.workInfo ul>li{
+  margin-left: 8px;
+  margin-bottom: 5px;
+}
+
 
 .button {
   background-color: #1e488f;
@@ -483,7 +489,7 @@ section {
   }
 
   .workPost {
-    min-height: 45vh;
+    min-height: 50vh;
     margin-top: 0;
   }
 
