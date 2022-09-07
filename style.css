@@ -107,9 +107,11 @@ a {
 }
 
 .modalDisplay {
-  display: block;
+  display: inline-flex;
   position: fixed;
-  background-color: gray;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(193, 199, 208, 0.6);
   top: 0;
   left: 0;
   height: 100vh;
@@ -117,10 +119,46 @@ a {
   z-index: 2;
 }
 
+.cardDiv {
+  position: relative;
+  min-height: 95vh;
+  background-color: white;
+  border-radius: 16px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.closeModal {
+  color: #67798e;
+  position: absolute;
+  top: 4%;
+  right: 7%;
+}
+
+.cardImgMob {
+  width: 90%;
+}
+
+.modalTitle {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  width: 90%;
+}
+
 .closeMenuSymbol {
   margin-left: 90%;
   margin-top: 5%;
   color: #67798e;
+}
+
+.cardDiv ul {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 form ul > li {
@@ -262,6 +300,7 @@ form ul {
   flex-direction: column;
   align-items: center;
 }
+
 
 .workInfo ul {
   width: 100%;
