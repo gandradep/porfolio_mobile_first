@@ -1,15 +1,20 @@
-let email = document.getElementById('emailAddress');
-let form = document.getElementById('contactForm');
+const email = document.getElementById('emailAddress');
+const form = document.getElementById('contactForm');
+const emailSpan = document.getElementById('emailSpan');
 
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const inputEmail = email.value;
+  const inputEmailLow = inputEmail.toLowerCase();
+  if (inputEmail === inputEmailLow) {
+    form.submit();
+  } else {
+    emailSpan.classList.remove('displayNone');
+    email.classList.add('errorBckG');
+  }
+});
 
-form.addEventListener('submit', (event)=>{
-    event.preventDefault();
-    let inputEmail = email.value;
-    let inputEmailLow = inputEmail.toLowerCase();
-    if(inputEmail === inputEmailLow) {
-        // form.submit();
-        console.log('Email was sent');
-    } else {
-        console.log('Please do not use caps');
-    }
+email.addEventListener('focus', () => {
+  emailSpan.classList.add('displayNone');
+  email.classList.remove('errorBckG');
 });

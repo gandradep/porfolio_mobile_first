@@ -437,6 +437,18 @@ div.skillsGrid {
   border-color: #60c095;
 }
 
+/* form validation */
+.spanError {
+  position: relative;
+  top: 7px;
+  color: red;
+  font-weight: 600;
+}
+
+.errorBckG {
+  background-color: #ffe7e8;
+}
+
 .paddInput {
   padding: 15px 16px;
 }
