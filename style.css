@@ -119,25 +119,28 @@ a {
   z-index: 2;
 }
 
+/* modal window classes */
 .cardDiv {
   position: relative;
   min-height: 95vh;
+  width: 90%;
   background-color: white;
   border-radius: 16px;
-  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
 }
 
 .closeModal {
-  color: #67798e;
+  color: white;
   position: absolute;
-  top: 4%;
+  top: 3%;
   right: 7%;
+  font-weight: 600;
 }
 
-.cardImgMob {
+.width90 {
   width: 90%;
 }
 
@@ -154,11 +157,52 @@ a {
   color: #67798e;
 }
 
-.cardDiv ul {
-  width: 90%;
+form ul {
+  margin-top: 58px;
+  margin-bottom: 46px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardDiv ul {
+  display: flex;
   flex-wrap: wrap;
+}
+
+.singleTechCard {
+  background-color: #ebf0ee;
+  border-radius: 5px;
+  padding: 2% 3%;
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 8px;
+  margin-bottom: 5px;
+}
+
+.projectCardDescription {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #344563;
+  text-align: justify;
+}
+
+.block {
+  display: block;
+}
+
+.divButtons {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.alignButton {
+  display: flex;
+  align-items: center;
+  width: 45%;
+  justify-content: center;
 }
 
 form ul > li {
@@ -293,15 +337,6 @@ hr {
   text-align: center;
 }
 
-form ul {
-  margin-top: 58px;
-  margin-bottom: 46px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
 .workInfo ul {
   width: 100%;
   display: flex;
@@ -309,13 +344,13 @@ form ul {
   flex-wrap: wrap;
 }
 
-.workInfo ul>li{
+.workInfo ul > li {
   margin-left: 8px;
   margin-bottom: 5px;
 }
 
-
 .button {
+  box-sizing: border-box;
   background-color: #1e488f;
   color: white;
   padding: 12px;
@@ -476,6 +511,43 @@ section {
   form ul {
     align-items: flex-start;
     margin: 0;
+  }
+
+  /* modal window desktop */
+
+  .cardDiv {
+    height: 65%;
+    width: 70%;
+  }
+
+  .closeModal {
+    box-sizing: border-box;
+    position: static;
+    color: #67798e;
+    background-color: #ebecf0;
+    padding: 14px;
+    border-radius: 8px;
+    align-self: flex-end;
+    margin-right: 5%;
+  }
+
+  .cardImgDesk {
+    width: 90%;
+    max-height: 50%;
+  }
+
+  .modalTitle {
+    width: 100%;
+  }
+
+  .divTextButton {
+    display: flex;
+    width: 90%;
+  }
+
+  .divButtons {
+    align-items: flex-start;
+    justify-content: space-around;
   }
 
   .displayDesktop ul {
