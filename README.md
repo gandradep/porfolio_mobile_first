@@ -1,6 +1,6 @@
 # Setup Portfolio MobileFirst
 
-> The portfolio project's seventh part consists of making the mobile menu functional using javaScript.
+> The portfolio project's eighth part consists of making the work section dynamic and adding modal windows. This section is created from a js object.
 [Link to website](https://gandradep.github.io/setupPortfolioMobileFirst/)
 
 ## Built With
