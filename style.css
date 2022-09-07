@@ -441,7 +441,7 @@ div.skillsGrid {
 .spanError {
   position: relative;
   top: 7px;
-  color: red;
+  color: #ff6163;
   font-weight: 600;
 }
 
