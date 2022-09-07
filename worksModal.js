@@ -63,9 +63,9 @@ const worksGrid = document.getElementById('worksGrid');
 
 for (let i = 0; i < worksInfo.title.length; i += 1) {
   const article = document.createElement('article');
-  article.className = 'workPost borderRad12';
+  article.className = 'workPost borderRad12 dFlex';
   const divCard = document.createElement('div');
-  divCard.className = 'workInfo borderRad12';
+  divCard.className = 'workInfo borderRad12 dFlex';
   const hgroup = document.createElement('hgroup');
   hgroup.className = 'postColor';
 
@@ -75,7 +75,7 @@ for (let i = 0; i < worksInfo.title.length; i += 1) {
   title.appendChild(textTitle);
 
   const techList = document.createElement('ul');
-  techList.className = 'postColor';
+  techList.className = 'postColor dFlex';
 
   const x = worksInfo.tech[i];
 
@@ -101,7 +101,7 @@ for (let i = 0; i < worksInfo.title.length; i += 1) {
 const modal = document.getElementById('modal');
 const buttons = Array.from(document.querySelectorAll('.workPost .button'));
 const cardDiv = document.createElement('div');
-cardDiv.classList.add('cardDiv');
+cardDiv.classList.add('cardDiv', 'dFlex');
 const cardImgMob = document.createElement('img');
 cardImgMob.classList.add('width90', 'displayMobile');
 const cardImgDesk = document.createElement('img');
@@ -113,18 +113,18 @@ modalTitleMob.classList.add('modalTitle', 'darkColor', 'displayMobile');
 const modalTitleDesk = document.createElement('h2');
 modalTitleDesk.classList.add('modalTitle', 'darkColor', 'displayDesktop');
 const modalTechList = document.createElement('ul');
-modalTechList.classList.add('postColor', 'width90');
+modalTechList.classList.add('postColor', 'width90', 'dFlex');
 const projectDescription = document.createElement('p');
 projectDescription.classList.add('projectCardDescription', 'width90');
 const divButtons = document.createElement('div');
-divButtons.classList.add('divButtons', 'displayMobile');
+divButtons.classList.add('divButtons', 'displayMobile', 'dFlex');
 const buttonLive = document.createElement('a');
-buttonLive.classList.add('button', 'block', 'alignButton');
+buttonLive.classList.add('button', 'alignButton', 'dFlex');
 buttonLive.target = '_blank';
 const liveText = document.createElement('span');
 liveText.innerText = 'See Live  ';
 const buttonSource = document.createElement('a');
-buttonSource.classList.add('button', 'block', 'alignButton');
+buttonSource.classList.add('button', 'alignButton', 'dFlex');
 buttonSource.target = '_blank';
 const sourceText = document.createElement('span');
 sourceText.innerText = 'See Source ';
@@ -135,7 +135,7 @@ sourceImg.src = 'assets/images/sourceIcon.png';
 const divTitleAndButton = document.createElement('div');
 divTitleAndButton.classList.add('displayDesktop', 'divTextButton');
 const divButtonsDesktop = document.createElement('div');
-divButtonsDesktop.classList.add('divButtons');
+divButtonsDesktop.classList.add('divButtons', 'dFlex');
 buttonLive.append(liveText, liveImg);
 buttonSource.append(sourceText, sourceImg);
 divButtons.append(buttonLive, buttonSource);

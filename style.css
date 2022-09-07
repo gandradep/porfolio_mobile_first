@@ -33,6 +33,10 @@ a {
   color: #28352f;
 }
 
+.dFlex{
+  display: flex;
+}
+
 .darkColor {
   color: #172b4d;
 }
@@ -70,7 +74,6 @@ a {
 }
 
 .wrapper {
-  display: flex;
   flex-direction: column;
   min-height: 100vh;
   overflow: hidden;
@@ -78,7 +81,6 @@ a {
 
 /* borders helped me visualize the different parts of the page */
 .displayMobileNav {
-  display: flex;
   justify-content: space-between;
   padding: 3% 7%;
   align-items: baseline;
@@ -126,7 +128,6 @@ a {
   width: 90%;
   background-color: white;
   border-radius: 16px;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
@@ -138,6 +139,7 @@ a {
   top: 3%;
   right: 7%;
   font-weight: 600;
+  font-size: 24px;
 }
 
 .width90 {
@@ -147,7 +149,7 @@ a {
 .modalTitle {
   font-weight: 600;
   font-size: 32px;
-  line-height: 44px;
+  line-height: 40px;
   width: 90%;
 }
 
@@ -160,13 +162,11 @@ a {
 form ul {
   margin-top: 58px;
   margin-bottom: 46px;
-  display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .cardDiv ul {
-  display: flex;
   flex-wrap: wrap;
 }
 
@@ -193,15 +193,13 @@ form ul {
 }
 
 .divButtons {
-  display: flex;
   justify-content: space-between;
   width: 90%;
 }
 
 .alignButton {
-  display: flex;
   align-items: center;
-  width: 45%;
+  width: 49%;
   justify-content: center;
 }
 
@@ -249,7 +247,6 @@ nav a:visited {
 }
 
 #headline {
-  display: flex;
   background-image: url("assets\\images\\header-illsutration-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -279,7 +276,6 @@ p {
 }
 
 ul.socialMedia {
-  display: flex;
   justify-content: center;
   margin-bottom: 17px;
 }
@@ -314,7 +310,6 @@ hr {
 .workPost {
   min-height: 60vh;
   margin-top: 24px;
-  display: flex;
   flex-direction: column;
   justify-content: flex-end;
   background-color: #ebf0ee;
@@ -324,7 +319,6 @@ hr {
 .workInfo {
   background-color: white;
   min-height: 48%;
-  display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
@@ -339,7 +333,6 @@ hr {
 
 .workInfo ul {
   width: 100%;
-  display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -377,7 +370,6 @@ hr {
 }
 
 #aboutMe header {
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -397,7 +389,6 @@ div.skillsGrid {
 .skills {
   min-height: 50vh;
   margin-top: 24px;
-  display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
@@ -417,7 +408,6 @@ div.skillsGrid {
 
 .skills ul {
   padding-top: 8%;
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }

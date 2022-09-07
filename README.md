@@ -1,6 +1,7 @@
 # Setup Portfolio MobileFirst
 
-> The portfolio project's eighth part consists of making the work section dynamic and adding modal windows. This section is created from a js object.
+> The portfolio project's seventh part consists of making the mobile menu functional using javaScript.
+> The project works by opening the index.html file. If linters are checked locally, please don't forget to install the needed modules `npm install`
 [Link to website](https://gandradep.github.io/setupPortfolioMobileFirst/)
 
 ## Built With
@@ -25,6 +26,7 @@ Give a ⭐️ if you like this project!
 
 - This project was achieved following the repositories created by Microverse.
 - The design for this project is based on the Microverse student portfolio templates.
+- Thanks to [@vflorin1995](https://github.com/vflorin1995) for his contribution with pop up Windows.
 
 ## 📝 License
 

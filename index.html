@@ -11,9 +11,9 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="wrapper">
+  <div class="wrapper dFlex">
     <header class="menu">
-      <nav class="displayMobileNav">
+      <nav class="displayMobileNav dFlex">
         <a href="index.html" class="navBarColor logo">Welcome</a>
         <div class="hamburgerMenu">
           <i id="hamburgerSymbol" class="fa-solid fa-bars"></i>
@@ -21,7 +21,7 @@
       </nav>
       <nav id="popUpMenuMobile" class="displayDesktop">
         <i id="closeMenuSymbol" class="displayMobile closeMenuSymbol fa-duotone fa-x"></i>
-        <ul>
+        <ul class="">
           <li>
             <a class="navBarColor" href="#works">Portfolio</a>
           </li>
@@ -34,7 +34,7 @@
         </ul>
       </nav>
     </header>
-    <section id="headline">
+    <section id="headline" class="dFlex">
       <hgroup class="padMobile">
         <h1 class="title  darkColor" id="title_animation">Hey there. I'm Gabriel.</h1>
         <h2 class="title  greenColor">I'm a software developer</h2>
@@ -44,7 +44,7 @@
 
       <p class="padMobile"> I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see
         and have a project you need coded, don’t hesitate to contact me.</p>
-        <ul class="socialMedia padMobile">
+        <ul class="socialMedia padMobile dFlex">
           <li>
             <a href="https://twitter.com/leribagandrade" rel="noopener" target="_blank"><img src="assets/images/twitter.svg" alt="twitter link"></a>
           </li>
@@ -90,7 +90,7 @@
 
 <!-- About me section -->
 <section id="aboutMe">
-  <header class="padMobile">
+  <header class="padMobile dFlex">
     <h1 class="title darkColor">About Me</h1>
     <p> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded,
       don’t hestiate to contact me.
@@ -99,11 +99,11 @@
   </header>
 
   <div class="skillsGrid padWork">
-    <div class="skills borderRad12">
+    <div class="skills borderRad12 dFlex">
       <img src="assets/images/icon-languages.svg" alt="">
       <article class="">
         <h2 class="cardTitle">Languages</h2>
-        <ul class="blueColor">
+        <ul class="blueColor dFlex">
           <li>JavaScript</li>
           <li>Ruby</li>
           <li>Html</li>
@@ -111,11 +111,11 @@
         </ul>
       </article>
     </div>
-    <div class="skills borderRad12">
+    <div class="skills borderRad12 dFlex">
       <img src="assets/images/icon-frameworks.svg" alt="">
       <article class="">
         <h2 class="cardTitle">Frameworks</h2>
-        <ul class="blueColor">
+        <ul class="blueColor dFlex">
           <li>Bootstrap</li>
           <li>Ruby on rails</li>
           <li>RSpec</li>
@@ -124,11 +124,11 @@
         </ul>
       </article>
     </div>
-    <div class="skills borderRad12">
+    <div class="skills borderRad12 dFlex">
       <img src="assets/images/icon-skills.svg" alt="">
       <article class="">
         <h2 class="cardTitle">Skills</h2>
-        <ul class="blueColor">
+        <ul class="blueColor dFlex">
           <li>Codekit</li>
           <li>Github</li>
           <li>Codepen</li>
@@ -147,7 +147,7 @@
     <p class="titleForm darkColor ">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
     </p>
     <form  action="https://formspree.io/f/mqkjaepa" method="post">
-      <ul>
+      <ul class="dFlex">
         <li class="w100">
           <label for="fullName" hidden>Full name</label>
           <input id="fullName" class="w100 formText paddInput" type="text" name="fullName" placeholder="Full name" required maxlength="30">
@@ -177,7 +177,7 @@
 
 <footer>
   <hr class="desktopHr">
-  <ul class="socialMedia padMobile">
+  <ul class="socialMedia padMobile dFlex">
     <li>
       <a href="https://twitter.com/leribagandrade" rel="noopener" target="_blank"><img src="assets/images/twitter.svg" alt="twitter link"></a>
     </li>
