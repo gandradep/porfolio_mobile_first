@@ -1,6 +1,6 @@
 # Setup Portfolio MobileFirst
 
-> The portfolio project's seventh part consists of making the mobile menu functional using javaScript.
+> This portfolio project's activity consisted of making the mobile menu functional using javaScript.
 > The project works by opening the index.html file. If linters are checked locally, please don't forget to install the needed modules `npm install`
 [Link to website](https://gandradep.github.io/setupPortfolioMobileFirst/)
 
