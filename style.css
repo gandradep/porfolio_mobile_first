@@ -137,7 +137,7 @@ a {
 .closeModal {
   color: white;
   position: absolute;
-  top: 3%;
+  top: 4vh;
   right: 7%;
   font-weight: 600;
   font-size: 24px;
