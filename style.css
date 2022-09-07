@@ -125,6 +125,7 @@ a {
 .cardDiv {
   position: relative;
   min-height: 95vh;
+  max-height: 97vh;
   width: 90%;
   background-color: white;
   border-radius: 16px;
@@ -148,8 +149,8 @@ a {
 
 .modalTitle {
   font-weight: 600;
-  font-size: 32px;
-  line-height: 40px;
+  font-size: 28px;
+  line-height: 38px;
   width: 90%;
 }
 
