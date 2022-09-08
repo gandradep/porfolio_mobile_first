@@ -1,6 +1,9 @@
+const fullName = document.getElementById('fullName');
 const email = document.getElementById('emailAddress');
+const comments = document.getElementById('comments');
 const form = document.getElementById('contactForm');
 const emailSpan = document.getElementById('emailSpan');
+
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -17,4 +20,9 @@ form.addEventListener('submit', (event) => {
 email.addEventListener('focus', () => {
   emailSpan.classList.add('displayNone');
   email.classList.remove('errorBckG');
+});
+
+/* preserving data to localStorage */
+fullName.addEventListener('focusout', (e) => {
+  localStorage.setItem('fullname', fullName.value);
 });
