@@ -24,22 +24,32 @@ email.addEventListener('focus', () => {
 
 /* preserving data to localStorage */
 
-let storedName = localStorage.getItem('fullname');
-let storedEmail = localStorage.getItem('email');
-let storedComment = localStorage.getItem('comments');
-fullName.value = storedName;
-email.value = storedEmail;
-comments.value = storedComment;
+var formData = {fullName: '', email: '', comments: ''};
+
+function updateStorageData () {
+  let formDataString = JSON.stringify(formData);
+  localStorage.setItem('formStored', formDataString);
+}
+
+let cookieData = localStorage.getItem('formStored');
+let object = JSON.parse(cookieData);
+
+fullName.value = object.fullName;
+email.value = object.email;
+comments.value = object.comments;
 
 fullName.addEventListener('focusout', () => {
-  localStorage.setItem('fullname', fullName.value);
+  formData.fullName = fullName.value;
+  updateStorageData();
 });
 
 email.addEventListener('focusout', () => {
-  localStorage.setItem('email', email.value);
+  formData.email = email.value;
+  updateStorageData();
 });
 
 comments.addEventListener('focusout', () => {
-  localStorage.setItem('comments', comments.value);
+  formData.comments = comments.value;
+  updateStorageData();
 });
 
