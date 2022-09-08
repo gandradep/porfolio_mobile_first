@@ -23,6 +23,23 @@ email.addEventListener('focus', () => {
 });
 
 /* preserving data to localStorage */
-fullName.addEventListener('focusout', (e) => {
+
+let storedName = localStorage.getItem('fullname');
+let storedEmail = localStorage.getItem('email');
+let storedComment = localStorage.getItem('comments');
+fullName.value = storedName;
+email.value = storedEmail;
+comments.value = storedComment;
+
+fullName.addEventListener('focusout', () => {
   localStorage.setItem('fullname', fullName.value);
 });
+
+email.addEventListener('focusout', () => {
+  localStorage.setItem('email', email.value);
+});
+
+comments.addEventListener('focusout', () => {
+  localStorage.setItem('comments', comments.value);
+});
+
