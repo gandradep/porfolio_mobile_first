@@ -3,7 +3,7 @@ const email = document.getElementById('emailAddress');
 const comments = document.getElementById('comments');
 const form = document.getElementById('contactForm');
 const emailSpan = document.getElementById('emailSpan');
-
+const formData = { fullName: '', email: '', comments: '' };
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -23,16 +23,13 @@ email.addEventListener('focus', () => {
 });
 
 /* preserving data to localStorage */
-
-var formData = {fullName: '', email: '', comments: ''};
-
-function updateStorageData () {
-  let formDataString = JSON.stringify(formData);
+function updateStorageData() {
+  const formDataString = JSON.stringify(formData);
   localStorage.setItem('formStored', formDataString);
 }
 
-let cookieData = localStorage.getItem('formStored');
-let object = JSON.parse(cookieData);
+const cookieData = localStorage.getItem('formStored');
+const object = JSON.parse(cookieData);
 
 fullName.value = object.fullName;
 email.value = object.email;
@@ -52,4 +49,3 @@ comments.addEventListener('focusout', () => {
   formData.comments = comments.value;
   updateStorageData();
 });
-
