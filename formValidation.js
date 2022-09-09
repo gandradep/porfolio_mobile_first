@@ -30,11 +30,11 @@ function updateStorageData() {
 
 const cookieData = localStorage.getItem('formStored');
 const object = JSON.parse(cookieData);
-if (object) {
+
   fullName.value = object.fullName;
   email.value = object.email;
   comments.value = object.comments;
-}
+
 fullName.addEventListener('focusout', () => {
   formData.fullName = fullName.value;
   updateStorageData();
