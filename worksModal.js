@@ -1,19 +1,19 @@
 const worksInfo = {
   title:
   [
-    'Keeping track of hundreds of components',
+    'Conference Page',
     'Project 2', 'Project 3', 'Project 4', 'Project 5', 'Project 6',
   ],
   tech:
   [
-    ['Codkit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal'],
+    ['Html', 'GitHub', 'JavaScript', 'css'],
     ['css', 'javaScript'], ['Ruby on rails', 'html', 'css'],
     ['css', 'javaScript'],
     ['Ruby on rails', 'html', 'css'], ['css', 'javaScript'],
   ],
   description:
   [
-    "Project1 text Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+    "Conference page mockup for the Processing Community Day.The page is responsive for mobile and desktop screens.",
     "Project2 text Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
     "Project3 text Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
     "Project4 text Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
@@ -22,7 +22,7 @@ const worksInfo = {
   ],
   projectImgMobile:
   [
-    'assets/images/p1Mobile.png',
+    'assets/images/conferenceMobile.png',
     'assets/images/p2Mobile.png',
     'assets/images/p1Mobile.png',
     'assets/images/p2Mobile.png',
@@ -31,7 +31,7 @@ const worksInfo = {
   ],
   projectImgDesktop:
   [
-    'assets/images/p1Desktop.png',
+    'assets/images/conferenceDesktop.png',
     'assets/images/p2Desktop.png',
     'assets/images/p1Desktop.png',
     'assets/images/p2Desktop.png',
@@ -41,7 +41,7 @@ const worksInfo = {
   ],
   linkLive:
   [
-    'https://gandradep.github.io/setupPortfolioMobileFirst/',
+    'https://gandradep.github.io/conferencePage/index.html',
     '#',
     'https://gandradep.github.io/setupPortfolioMobileFirst/',
     'https://gandradep.github.io/setupPortfolioMobileFirst/',
@@ -50,7 +50,7 @@ const worksInfo = {
   ],
   linkSource:
   [
-    'https://github.com/gandradep/setupPortfolioMobileFirst',
+    'https://github.com/gandradep/conferencePage',
     '#',
     'https://github.com/gandradep/setupPortfolioMobileFirst',
     'https://github.com/gandradep/setupPortfolioMobileFirst',
