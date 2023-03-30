@@ -98,6 +98,7 @@ for (let i = 0; i < worksInfo.title.length; i += 1) {
 }
 
 /* create modal window */
+const body = document.querySelector("body");
 const modal = document.getElementById('modal');
 const buttons = Array.from(document.querySelectorAll('.workPost .button'));
 const cardDiv = document.createElement('div');
@@ -154,6 +155,7 @@ buttons.forEach((button) => {
     buttonLive.href = worksInfo.linkLive[index];
     buttonSource.href = worksInfo.linkSource[index];
     divButtonsDesktop.append(buttonLive.cloneNode(true), buttonSource.cloneNode(true));
+    body.style.overflow = "hidden";
 
     /* only displays 3 use technologies for mobile screen */
 
@@ -172,12 +174,15 @@ buttons.forEach((button) => {
     );
     modal.appendChild(cardDiv);
   });
+
 });
 
 closeModal.addEventListener('click', () => {
   modal.classList.remove('modalDisplay');
   modal.classList.add('displayNone');
+
   modalTechList.innerText = '';
   modal.innerText = '';
   divButtonsDesktop.innerText = '';
+  body.style.overflow = "auto";
 });
