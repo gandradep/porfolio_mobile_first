@@ -2,19 +2,19 @@ const worksInfo = {
   title:
   [
     'Conference Page',
-    'Project 2', 'Project 3', 'Project 4', 'Project 5', 'Project 6',
+    'Budget App', 'Project 3', 'Project 4', 'Project 5', 'Project 6',
   ],
   tech:
   [
     ['Html', 'GitHub', 'JavaScript', 'css'],
-    ['css', 'javaScript'], ['Ruby on rails', 'html', 'css'],
+    ['Ruby', 'Rails', 'Postgres'], ['Ruby on rails', 'html', 'css'],
     ['css', 'javaScript'],
     ['Ruby on rails', 'html', 'css'], ['css', 'javaScript'],
   ],
   description:
   [
     "Conference page mockup for the Processing Community Day.The page is responsive for mobile and desktop screens.",
-    "Project2 text Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+    "This app made with Ruby on rails and devise, help us keep track of our expenses. You are able to create categories and add expenses to one or several categories you created.",
     "Project3 text Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
     "Project4 text Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
     "Project5 text Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
@@ -23,7 +23,7 @@ const worksInfo = {
   projectImgMobile:
   [
     'assets/images/conferenceMobile.png',
-    'assets/images/p2Mobile.png',
+    'assets/images/budgetMobile.png',
     'assets/images/p1Mobile.png',
     'assets/images/p2Mobile.png',
     'assets/images/p1Mobile.png',
@@ -32,7 +32,7 @@ const worksInfo = {
   projectImgDesktop:
   [
     'assets/images/conferenceDesktop.png',
-    'assets/images/p2Desktop.png',
+    'assets/images/budgetDesktop.png',
     'assets/images/p1Desktop.png',
     'assets/images/p2Desktop.png',
     'assets/images/p1Desktop.png',
@@ -42,7 +42,7 @@ const worksInfo = {
   linkLive:
   [
     'https://gandradep.github.io/conferencePage/index.html',
-    '#',
+    '#https://budget-app-bdu6.onrender.com',
     'https://gandradep.github.io/setupPortfolioMobileFirst/',
     'https://gandradep.github.io/setupPortfolioMobileFirst/',
     'https://gandradep.github.io/setupPortfolioMobileFirst/',
@@ -51,7 +51,7 @@ const worksInfo = {
   linkSource:
   [
     'https://github.com/gandradep/conferencePage',
-    '#',
+    'https://github.com/gandradep/budget_app',
     'https://github.com/gandradep/setupPortfolioMobileFirst',
     'https://github.com/gandradep/setupPortfolioMobileFirst',
     'https://github.com/gandradep/setupPortfolioMobileFirst',
@@ -88,7 +88,7 @@ for (let i = 0; i < worksInfo.title.length; i += 1) {
   const button = document.createElement('a');
   button.innerText = 'See Project';
   button.className = 'button';
-  button.href = '#';
+  // button.href = '#';
   hgroup.appendChild(title);
   divCard.appendChild(hgroup);
   divCard.appendChild(techList);

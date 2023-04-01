@@ -358,6 +358,7 @@ hr {
   background-color: #1e488f;
   color: white;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  cursor: pointer;
 }
 
 .button:active {
