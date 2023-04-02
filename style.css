@@ -135,7 +135,7 @@ a {
 }
 
 .closeModal {
-  color: white;
+  color: gray;
   position: absolute;
   top: 4vh;
   right: 7%;
@@ -309,17 +309,17 @@ hr {
 }
 
 .workPost {
-  min-height: 60vh;
+  min-height: 45vh;
   margin-top: 24px;
   flex-direction: column;
   justify-content: flex-end;
-  background-color: #ebf0ee;
+  backdrop-filter: blur(5px);
   border: solid 1px #d0d9d4;
 }
 
 .workInfo {
   background-color: white;
-  min-height: 48%;
+  min-height: 50%;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;

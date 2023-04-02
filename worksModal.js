@@ -63,6 +63,7 @@ const worksGrid = document.getElementById('worksGrid');
 for (let i = 0; i < worksInfo.title.length; i += 1) {
   const article = document.createElement('article');
   article.className = 'workPost borderRad12 d-flex';
+  article.style.cssText+= `background-image:url(${worksInfo.projectImgMobile[i]});background-size:cover`;
   const divCard = document.createElement('div');
   divCard.className = 'workInfo borderRad12 d-flex';
   const hgroup = document.createElement('hgroup');
@@ -92,7 +93,7 @@ for (let i = 0; i < worksInfo.title.length; i += 1) {
   divCard.appendChild(hgroup);
   divCard.appendChild(techList);
   divCard.appendChild(button);
-  article.appendChild(divCard);
+  article.append(divCard);
   worksGrid.appendChild(article);
 }
 
