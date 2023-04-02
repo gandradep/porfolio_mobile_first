@@ -5,18 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
   <title>Portfolio Gabriel Andrade</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="wrapper dFlex">
+  <div class="wrapper d-flex">
     <header class="menu">
-      <nav class="displayMobileNav dFlex">
-        <a href="index.html" class="navBarColor logo">Welcome</a>
-        <div class="hamburgerMenu">
-          <i id="hamburgerSymbol" class="fa-solid fa-bars"></i>
+      <nav class="displayMobileNav">
+        <div class="d-flex justify-content-between">
+          <a href="index.html" class="navBarColor logo">Welcome</a>
+          <div class="hamburgerMenu">
+            <i id="hamburgerSymbol" class="fa-solid fa-bars"></i>
+          </div>
         </div>
       </nav>
       <nav id="popUpMenuMobile" class="displayDesktop">
@@ -34,31 +37,30 @@
         </ul>
       </nav>
     </header>
-    <section id="headline" class="dFlex">
-      <hgroup class="padMobile">
+    <section id="headline" class="d-flex">
+      <div class="padMobile">
         <h1 class="title  darkColor" id="title_animation">Hey there. I'm Gabriel.</h1>
         <h2 class="title  greenColor">I'm a software developer</h2>
-
-      </hgroup>
+      </div>
 
 
       <p class="padMobile"> I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see
         and have a project you need coded, don’t hesitate to contact me.</p>
-        <ul class="socialMedia padMobile dFlex">
+        <ul class="socialMedia padMobile d-flex">
           <li>
-            <a href="https://twitter.com/leribagandrade" rel="noopener" target="_blank"><img src="assets/images/twitter.svg" alt="twitter link"></a>
+            <a href="https://twitter.com/leribagandrade" rel="noopener" target="_blank"><img src="assets/images/social_media/twitter.svg" alt="twitter link"></a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/gabriel-andrade-silla-turca/" rel="noopener" target="_blank"><img src="assets/images/linkedin.svg" alt="linkedin link"></a>
+            <a href="https://www.linkedin.com/in/gabriel-andrade-silla-turca/" rel="noopener" target="_blank"><img src="assets/images/social_media/linkedin.svg" alt="linkedin link"></a>
           </li>
           <li>
-            <a href="#" rel="noopener" target="_blank"><img src="assets/images/medium.svg" alt="medium link"></a>
+            <a href="https://medium.com/@eventsonido" rel="noopener" target="_blank"><img src="assets/images/social_media/medium.svg" alt="medium link"></a>
           </li>
           <li>
-            <a href="https://github.com/gandradep" rel="noopener" target="_blank"><img src="assets/images/github.svg" alt="github link"></a>
+            <a href="https://github.com/gandradep" rel="noopener" target="_blank"><img src="assets/images/social_media/github.svg" alt="github link"></a>
           </li>
           <li>
-            <a href="#" rel="noopener" target="_blank"><img src="assets/images/angellist.svg" alt="angelist link"></a>
+            <a href="https://wellfound.com/u/gandradep" rel="noopener" target="_blank"><img src="assets/images/social_media/angellist.svg" alt="angelist link"></a>
           </li>
 
         </ul>
@@ -84,26 +86,26 @@
       </div>
     </section>
 
-    <section id="modal" class="displayNone">
+    <div id="modal" class="displayNone">
 
-    </section>
+    </div>
 
 <!-- About me section -->
 <section id="aboutMe">
-  <header class="padMobile dFlex">
+  <header class="padMobile d-flex">
     <h1 class="title darkColor">About Me</h1>
-    <p> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded,
-      don’t hestiate to contact me.
+    <p> Full-stack developer and multimedia artist skilled in Ruby on Rails, JavaScript and its libraries to create unique interactive experiences. My adaptability, creativity and excellent communication skills enables me to take on new challenges,
+      and be a communication bridge between engineers and designers.
     </p>
-    <a class="button" href="#">Get My Resume</a>
+    <a class="button" target="_blank" rel="noopener" href="https://docs.google.com/document/d/1A0OK76Y0wGifWnnQXLqObikHqTmBUVGNGoJTQTYEM-I/edit?usp=sharing">Get My Resume</a>
   </header>
 
   <div class="skillsGrid padWork">
-    <div class="skills borderRad12 dFlex">
+    <div class="skills borderRad12 d-flex">
       <img src="assets/images/icon-languages.svg" alt="">
       <article class="">
         <h2 class="cardTitle">Languages</h2>
-        <ul class="blueColor dFlex">
+        <ul class="blueColor d-flex">
           <li>JavaScript</li>
           <li>Ruby</li>
           <li>Html</li>
@@ -111,11 +113,11 @@
         </ul>
       </article>
     </div>
-    <div class="skills borderRad12 dFlex">
+    <div class="skills borderRad12 d-flex">
       <img src="assets/images/icon-frameworks.svg" alt="">
       <article class="">
         <h2 class="cardTitle">Frameworks</h2>
-        <ul class="blueColor dFlex">
+        <ul class="blueColor d-flex">
           <li>Bootstrap</li>
           <li>Ruby on rails</li>
           <li>RSpec</li>
@@ -124,11 +126,11 @@
         </ul>
       </article>
     </div>
-    <div class="skills borderRad12 dFlex">
+    <div class="skills borderRad12 d-flex">
       <img src="assets/images/icon-skills.svg" alt="">
       <article class="">
         <h2 class="cardTitle">Skills</h2>
-        <ul class="blueColor dFlex">
+        <ul class="blueColor d-flex">
           <li>Codekit</li>
           <li>Github</li>
           <li>Codepen</li>
@@ -144,10 +146,10 @@
 </section>
 <div id="wrapperForm">
   <section id="form" class="padForm">
-    <p class="titleForm darkColor ">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
-    </p>
+    <h6 class="titleForm darkColor px-sm-5 ">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+    </h6>
     <form  id="contactForm" action="https://formspree.io/f/mqkjaepa" method="post">
-      <ul class="dFlex">
+      <ul class="d-flex p-0">
         <li class="w100">
           <label for="fullName" hidden>Full name</label>
           <input id="fullName" class="w100 formText paddInput" type="text" name="fullName" placeholder="Full name" required maxlength="30">
@@ -178,21 +180,21 @@
 
 <footer>
   <hr class="desktopHr">
-  <ul class="socialMedia padMobile dFlex">
+  <ul class="socialMedia padMobile d-flex ">
     <li>
-      <a href="https://twitter.com/leribagandrade" rel="noopener" target="_blank"><img src="assets/images/twitter.svg" alt="twitter link"></a>
+      <a href="https://twitter.com/leribagandrade" rel="noopener" target="_blank"><img src="assets/images/social_media/twitter.svg" alt="twitter link"></a>
     </li>
     <li>
-      <a href="https://www.linkedin.com/in/gabriel-andrade-silla-turca/" rel="noopener" target="_blank"><img src="assets/images/linkedin.svg" alt="linkedin link"></a>
+      <a href="https://www.linkedin.com/in/gabriel-andrade-silla-turca/" rel="noopener" target="_blank"><img src="assets/images/social_media/linkedin.svg" alt="linkedin link"></a>
     </li>
     <li>
-      <a href="#" rel="noopener" target="_blank"><img src="assets/images/medium.svg" alt="medium link"></a>
+      <a href="https://medium.com/@eventsonido" rel="noopener" target="_blank"><img src="assets/images/social_media/medium.svg" alt="medium link"></a>
     </li>
     <li>
-      <a href="https://github.com/gandradep" rel="noopener" target="_blank"><img src="assets/images/github.svg" alt="github link"></a>
+      <a href="https://github.com/gandradep" rel="noopener" target="_blank"><img src="assets/images/social_media/github.svg" alt="github link"></a>
     </li>
     <li>
-      <a href="#" rel="noopener" target="_blank"><img src="assets/images/angellist.svg" alt="angelist link"></a>
+      <a href="https://wellfound.com/u/gandradep" rel="noopener" target="_blank"><img src="assets/images/social_media/angellist.svg" alt="angelist link"></a>
     </li>
   </ul>
   <p class="displayMobile">eventsonido@gmail.com
@@ -202,6 +204,7 @@
 <script src="menu.js"></script>
 <script src="worksModal.js"></script>
 <script src="formValidation.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 </body>
 
 </html>
