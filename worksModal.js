@@ -7,17 +7,17 @@ const worksInfo = {
   [
     ['Ruby', 'Rails', 'Postgres'], ['React', 'Redux', 'CSS3'],
     ['JavaScript', 'CSS3', 'Html'],
-    ['React', 'Html', 'CSS3'], ['Html', 'GitHub', 'JavaScript', 'CSS3'], ['Html','CSS3', 'JavaScript'],
+    ['React', 'Html', 'CSS3'], ['Html', 'GitHub', 'JavaScript', 'CSS3'], ['Html', 'CSS3', 'JavaScript'],
   ],
   description:
   [
 
-    "This app made with Ruby on rails and devise, help us keep track of our expenses. You are able to create categories and add expenses to one or several categories you created.",
-    "Famous quotes is an app that shows famous quotes said by different persons in the last century. The quotes are fetched from a public API.",
-    "This project is a To Do List. Built using webpack, HTML, CSS, JavaScript. The user can create, erase, and update tasks. Also, the user can mark completed tasks.",
-    "This project is a calculator made using React and ReactRouters for the navbar links.",
-    "Conference page mockup for the Processing Community Day.The page is responsive for mobile and desktop screens.",
-    "This portfolio project gathers and shows data dynamically from an object. The responsive design of the project has a mobile first approach.",
+    'This app made with Ruby on rails and devise, help us keep track of our expenses. You are able to create categories and add expenses to one or several categories you created.',
+    'Famous quotes is an app that shows famous quotes said by different persons in the last century. The quotes are fetched from a public API.',
+    'This project is a To Do List. Built using webpack, HTML, CSS, JavaScript. The user can create, erase, and update tasks. Also, the user can mark completed tasks.',
+    'This project is a calculator made using React and ReactRouters for the navbar links.',
+    'Conference page mockup for the Processing Community Day.The page is responsive for mobile and desktop screens.',
+    'This portfolio project gathers and shows data dynamically from an object. The responsive design of the project has a mobile first approach.',
   ],
   projectImgMobile:
   [
@@ -63,7 +63,7 @@ const worksGrid = document.getElementById('worksGrid');
 for (let i = 0; i < worksInfo.title.length; i += 1) {
   const article = document.createElement('article');
   article.className = 'workPost borderRad12 d-flex';
-  article.style.cssText+= `background-image:url(${worksInfo.projectImgMobile[i]});background-size:cover`;
+  article.style.cssText += `background-image:url(${worksInfo.projectImgMobile[i]});background-size:cover`;
   const divCard = document.createElement('div');
   divCard.className = 'workInfo borderRad12 d-flex';
   const hgroup = document.createElement('hgroup');
@@ -98,7 +98,7 @@ for (let i = 0; i < worksInfo.title.length; i += 1) {
 }
 
 /* create modal window */
-const body = document.querySelector("body");
+const body = document.querySelector('body');
 const modal = document.getElementById('modal');
 const buttons = Array.from(document.querySelectorAll('.workPost .button'));
 const cardDiv = document.createElement('div');
@@ -155,7 +155,7 @@ buttons.forEach((button) => {
     buttonLive.href = worksInfo.linkLive[index];
     buttonSource.href = worksInfo.linkSource[index];
     divButtonsDesktop.append(buttonLive.cloneNode(true), buttonSource.cloneNode(true));
-    body.style.overflow = "hidden";
+    body.style.overflow = 'hidden';
 
     /* only displays 3 use technologies for mobile screen */
 
@@ -174,7 +174,6 @@ buttons.forEach((button) => {
     );
     modal.appendChild(cardDiv);
   });
-
 });
 
 closeModal.addEventListener('click', () => {
@@ -184,5 +183,5 @@ closeModal.addEventListener('click', () => {
   modalTechList.innerText = '';
   modal.innerText = '';
   divButtonsDesktop.innerText = '';
-  body.style.overflow = "auto";
+  body.style.overflow = 'auto';
 });
