@@ -63,7 +63,6 @@ const worksGrid = document.getElementById('worksGrid');
 for (let i = 0; i < worksInfo.title.length; i += 1) {
   const article = document.createElement('article');
   article.className = 'workPost borderRad12 d-flex';
-  // article.style.cssText += `background-image:url(${worksInfo.projectImgMobile[i]});background-size:cover`;
   const divCard = document.createElement('div');
   const imgCard = document.createElement('div');
   const imgProject = document.createElement('img');

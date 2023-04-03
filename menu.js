@@ -1,6 +1,7 @@
 const hamburgerSymbol = document.getElementById('hamburgerSymbol');
 const popUpMenuMobile = document.getElementById('popUpMenuMobile');
 const closeMenuSymbol = document.getElementById('closeMenuSymbol');
+const body = document.querySelector('body');
 const menuListItems = Array.from(document.querySelectorAll('ul .navBarColor'));
 
 function openMenu() {
