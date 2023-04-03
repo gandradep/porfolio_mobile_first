@@ -304,8 +304,6 @@ hr {
   margin: 10% auto;
 }
 
-
-
 .workPost {
   min-height: 444px;
   width: 330px;
@@ -407,8 +405,8 @@ div.skillsGrid {
 }
 
 .skills ul {
-  padding:0;
-  margin-top:20px;
+  padding: 0;
+  margin-top: 20px;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -536,7 +534,9 @@ section {
   }
 
   .cardImgDesk {
-    width: 90%;
+    width: 80%;
+
+    height: auto;
     max-height: 60%;
   }
 
@@ -612,7 +612,7 @@ section {
 
   .workPost {
     min-height: 50vh;
-    margin:20px 15px;
+    margin: 20px 15px;
   }
 
   .workInfo ul {
