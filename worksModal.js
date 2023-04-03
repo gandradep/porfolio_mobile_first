@@ -63,9 +63,15 @@ const worksGrid = document.getElementById('worksGrid');
 for (let i = 0; i < worksInfo.title.length; i += 1) {
   const article = document.createElement('article');
   article.className = 'workPost borderRad12 d-flex';
-  article.style.cssText += `background-image:url(${worksInfo.projectImgMobile[i]});background-size:cover`;
+  // article.style.cssText += `background-image:url(${worksInfo.projectImgMobile[i]});background-size:cover`;
   const divCard = document.createElement('div');
+  const imgCard = document.createElement('div');
+  const imgProject = document.createElement('img');
   divCard.className = 'workInfo borderRad12 d-flex';
+  imgCard.className = 'workInfo ';
+  imgProject.src = worksInfo.projectImgMobile[i];
+  imgProject.className = 'img-fluid borderRad12';
+
   const hgroup = document.createElement('hgroup');
   hgroup.className = 'postColor';
 
@@ -93,7 +99,8 @@ for (let i = 0; i < worksInfo.title.length; i += 1) {
   divCard.appendChild(hgroup);
   divCard.appendChild(techList);
   divCard.appendChild(button);
-  article.append(divCard);
+  imgCard.appendChild(imgProject);
+  article.append(imgCard, divCard);
   worksGrid.appendChild(article);
 }
 
