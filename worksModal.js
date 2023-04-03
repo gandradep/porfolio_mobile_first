@@ -63,9 +63,14 @@ const worksGrid = document.getElementById('worksGrid');
 for (let i = 0; i < worksInfo.title.length; i += 1) {
   const article = document.createElement('article');
   article.className = 'workPost borderRad12 d-flex';
-  article.style.cssText += `background-image:url(${worksInfo.projectImgMobile[i]});background-size:cover`;
   const divCard = document.createElement('div');
+  const imgCard = document.createElement('div');
+  const imgProject = document.createElement('img');
   divCard.className = 'workInfo borderRad12 d-flex';
+  imgCard.className = 'workInfo ';
+  imgProject.src = worksInfo.projectImgMobile[i];
+  imgProject.className = 'img-fluid borderRad12';
+
   const hgroup = document.createElement('hgroup');
   hgroup.className = 'postColor';
 
@@ -93,7 +98,8 @@ for (let i = 0; i < worksInfo.title.length; i += 1) {
   divCard.appendChild(hgroup);
   divCard.appendChild(techList);
   divCard.appendChild(button);
-  article.append(divCard);
+  imgCard.appendChild(imgProject);
+  article.append(imgCard, divCard);
   worksGrid.appendChild(article);
 }
 
@@ -118,7 +124,9 @@ modalTechList.classList.add('postColor', 'width90', 'd-flex');
 const projectDescription = document.createElement('p');
 projectDescription.classList.add('projectCardDescription', 'width90');
 const divButtons = document.createElement('div');
-divButtons.classList.add('divButtons', 'displayMobile', 'd-flex');
+const divTest = document.createElement('div');
+divTest.classList.add('displayMobile');
+divButtons.classList.add('divButtons', 'd-flex');
 const buttonLive = document.createElement('a');
 buttonLive.classList.add('button', 'alignButton', 'd-flex');
 buttonLive.target = '_blank';
@@ -140,7 +148,7 @@ divButtonsDesktop.classList.add('divButtons', 'd-flex');
 buttonLive.append(liveText, liveImg);
 buttonSource.append(sourceText, sourceImg);
 divButtons.append(buttonLive, buttonSource);
-
+divTest.append(divButtons);
 buttons.forEach((button) => {
   button.addEventListener('click', () => {
     const index = buttons.indexOf(button);
@@ -170,7 +178,7 @@ buttons.forEach((button) => {
     divTitleAndButton.append(modalTitleDesk, divButtonsDesktop);
     cardDiv.append(
       closeModal, cardImgDesk, cardImgMob, divTitleAndButton, modalTitleMob,
-      modalTechList, projectDescription, divButtons,
+      modalTechList, projectDescription, divTest,
     );
     modal.appendChild(cardDiv);
   });
