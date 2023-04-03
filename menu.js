@@ -4,11 +4,11 @@ const closeMenuSymbol = document.getElementById('closeMenuSymbol');
 const menuListItems = Array.from(document.querySelectorAll('ul .navBarColor'));
 
 function openMenu() {
-  popUpMenuMobile.classList.add('showMenu');  
+  popUpMenuMobile.classList.add('showMenu');
 }
 
 function closeMenu() {
-  popUpMenuMobile.classList.remove('showMenu');  
+  popUpMenuMobile.classList.remove('showMenu');
 }
 
 hamburgerSymbol.addEventListener('click', openMenu);
