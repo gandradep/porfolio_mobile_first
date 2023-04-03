@@ -118,7 +118,9 @@ modalTechList.classList.add('postColor', 'width90', 'd-flex');
 const projectDescription = document.createElement('p');
 projectDescription.classList.add('projectCardDescription', 'width90');
 const divButtons = document.createElement('div');
-divButtons.classList.add('divButtons', 'displayMobile', 'd-flex');
+const divTest = document.createElement('div');
+divTest.classList.add('displayMobile');
+divButtons.classList.add('divButtons', 'd-flex');
 const buttonLive = document.createElement('a');
 buttonLive.classList.add('button', 'alignButton', 'd-flex');
 buttonLive.target = '_blank';
@@ -140,7 +142,7 @@ divButtonsDesktop.classList.add('divButtons', 'd-flex');
 buttonLive.append(liveText, liveImg);
 buttonSource.append(sourceText, sourceImg);
 divButtons.append(buttonLive, buttonSource);
-
+divTest.append(divButtons);
 buttons.forEach((button) => {
   button.addEventListener('click', () => {
     const index = buttons.indexOf(button);
@@ -170,7 +172,7 @@ buttons.forEach((button) => {
     divTitleAndButton.append(modalTitleDesk, divButtonsDesktop);
     cardDiv.append(
       closeModal, cardImgDesk, cardImgMob, divTitleAndButton, modalTitleMob,
-      modalTechList, projectDescription, divButtons,
+      modalTechList, projectDescription, divTest,
     );
     modal.appendChild(cardDiv);
   });

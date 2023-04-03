@@ -5,10 +5,12 @@ const menuListItems = Array.from(document.querySelectorAll('ul .navBarColor'));
 
 function openMenu() {
   popUpMenuMobile.classList.add('showMenu');
+  body.style.overflow = 'hidden';
 }
 
 function closeMenu() {
   popUpMenuMobile.classList.remove('showMenu');
+  body.style.overflow = 'auto';
 }
 
 hamburgerSymbol.addEventListener('click', openMenu);
