@@ -12,12 +12,12 @@ const worksInfo = {
   description:
   [
 
-    'This app made with Ruby on rails and devise, help us keep track of our expenses. You are able to create categories and add expenses to one or several categories you created.',
-    'Famous quotes is an app that shows famous quotes said by different persons in the last century. The quotes are fetched from a public API.',
-    'This project is a To Do List. Built using webpack, HTML, CSS, JavaScript. The user can create, erase, and update tasks. Also, the user can mark completed tasks.',
-    'This project is a calculator made using React and ReactRouters for the navbar links.',
-    'Conference page mockup for the Processing Community Day.The page is responsive for mobile and desktop screens.',
-    'This portfolio project gathers and shows data dynamically from an object. The responsive design of the project has a mobile first approach.',
+    'This application, made with Ruby on Rails and Devise, helps us keep track of our expenses. You can create categories and add expenses to one or several categories you created.',
+    'Famous Quotes is an app that shows famous quotes said by different persons in the last century. The quotes are fetched from a public API.',
+    'This project is a To-Do List. Built using Webpack, HTML, CSS, and JavaScript. The user can create, erase, and update tasks. Also, the user can mark completed tasks.',
+    'This project is a calculator made with React and React Routers for the navbar links.',
+    'Conference page mockup for the Processing Community Day. The page is responsive for mobile and desktop screens.',
+    'This portfolio project gathers and shows data dynamically from an object. The responsive design of the project has a mobile-first approach.',
   ],
   projectImgMobile:
   [
@@ -40,7 +40,7 @@ const worksInfo = {
   ],
   linkLive:
   [
-    '#https://budget-app-bdu6.onrender.com',
+    'https://budget-app-bdu6.onrender.com',
     'https://profound-biscochitos-b105fe.netlify.app/',
     'https://gandradep.github.io/toDoList/dist/',
     'https://fanciful-moxie-2b27f1.netlify.app/',
@@ -125,8 +125,8 @@ const projectDescription = document.createElement('p');
 projectDescription.classList.add('projectCardDescription', 'width90');
 const divButtons = document.createElement('div');
 const divTest = document.createElement('div');
-divTest.classList.add('displayMobile');
-divButtons.classList.add('divButtons', 'd-flex');
+divTest.classList.add('displayMobile', 'w-100', 'px-2');
+divButtons.classList.add('d-flex', 'divButtons', 'w-100');
 const buttonLive = document.createElement('a');
 buttonLive.classList.add('button', 'alignButton', 'd-flex');
 buttonLive.target = '_blank';
@@ -191,5 +191,5 @@ closeModal.addEventListener('click', () => {
   modalTechList.innerText = '';
   modal.innerText = '';
   divButtonsDesktop.innerText = '';
-  body.style.overflow = 'auto';
+  body.style.removeProperty('overflow');
 });
