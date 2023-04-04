@@ -191,5 +191,5 @@ closeModal.addEventListener('click', () => {
   modalTechList.innerText = '';
   modal.innerText = '';
   divButtonsDesktop.innerText = '';
-  body.style.overflow = 'auto';
+  body.style.removeProperty('overflow');
 });
